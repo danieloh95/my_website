@@ -1,0 +1,219 @@
+body {
+    margin: 0px;
+    text-align: center; /* This only works on inline block elements or full-width block elements */
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+}
+
+h1 {
+    font-size: 5rem; /* 16px == 100% == 1em. You can use root em or rem so that it is not affected by upstream size changes */
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    margin: 50px auto 0 auto;
+}
+
+/*
+h1 {
+    width: 40%;
+    margin: 50px auto 0 auto; Centering an element using margin. This is useful for block elements with a width set. Auto will center the element either vertically or horizontally.
+    line-height: 2; Specifying the line height increases the height of a line box by that multiple.
+}
+*/
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #66BFBF;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    margin-top: 28.72px;
+}
+
+hr {
+    border-style: dotted none none;
+    border-color: #B0B0B0;
+    border-width: 5px;
+    width: 5%;
+}
+
+p {
+    line-height: 2;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;  /* If we want our elements inside the parent to have a position relative to the parent (absolute positioning), the parent itself must have its position set to relative. Else, the elements will default to being relative to the body  */
+    padding-top: 100px;
+    height: 577.312px;
+}
+
+.top-label {
+    margin-top: 0;
+}
+
+.profile {
+    margin: 60px 0 50px 0;
+}
+
+.middle-container {
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 46px 0 30px 0;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.mountain {
+    position: absolute;
+    left: 50%;
+    margin-left: -299px;
+    bottom: 0;
+}
+
+.skills {
+    margin-top: 70px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 50px auto 150px auto;
+    text-align: left;
+}
+.button-line {
+    margin-bottom: 64px;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.contact-me {
+    margin: 75px auto;
+}
+
+.footer-link {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+
+#chip {
+    background-color: #212F3D;
+    border-radius: 100px;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+#big-data {
+    background-color: #212F3D;
+    border-radius: 100px;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+#web-design {
+    background-color: #212F3D;
+    border-radius: 100px;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+/*  h1, p are block display elements - They don't let other elements sit on the same line (although you can still change their width). You can convert block display elements to inline elements as follows.
+
+h1 {
+    display: inline;
+}
+
+*/
+
+/*  span is an inline display element - They let other elements sit on the same line (although you cannot change their width). You can convert inline display elements to block elements as follows.
+
+span {
+    display: block;
+    width: 100px;
+}
+
+*/
+
+/* You can change the element's display value to inline-block. Images are like inline-block elements. They let other elements sit on the same line, AND you can change their width.
+
+h1 {
+    display: inline-block;
+    width: 100px;
+}
+
+*/
+
+/* You can change the element's display value to none.  This hides the element as if it wasn't there.
+
+h1 {
+    display: none;
+}
+
+*/
+
+/* Alternatively, you can set its visibility to hidden. The element disappears but keeps its original position. And all the other elements still flow around it as if its still there.
+
+h1 {
+    visibility: hidden;
+}
+
+*/
